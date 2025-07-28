@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Forum", serif;
+}
+
+:root{
+  --dark-grey : #2D2C2C ;
+  --dark-grey-900 : #050404 ;
+  --dark-grey-800 : #0B0B0B ;
+  --dark-grey-700 : #171616 ;
+  --dark-grey-600 : #222121 ;
+  --dark-grey-500 : #2d2c2c ;
+  --dark-grey-400 : #575656 ;
+  --dark-grey-300 : #818080 ;
+  --dark-grey-200 : #ababab ;
+  --dark-grey-100 : #d5d5d5;
+  --dark-grey-50 : #ebeaea;
+  --gold : #BF9766 ;
+  --gold-900 : #130f0a ;
+  --gold-800 : #30261a ;
+  --gold-700 : #604c33 ;
+  --gold-600 : #8f714d ;
+  --gold-500 : #bf9766 ;
+  --gold-400 : #ccac85 ;
+  --gold-300 : #d9c1a3 ;
+  --gold-200 : #e5d5c2 ;
+  --gold-100 : #f2eae0 ;
+  --gold-50 : #f9f5f0 ;
+  --bg : #ffffff ;
+  --text : #171717 ;
+  --body-text : #575656 ;
+  --h-1 : 112px ;
+  --h-2 : 90px ;
+  --h-3 : 64px ;
+  --h-4 : 48px ;
+  --h-5 : 32px ;
+  --h-6 : 24px ;
+  --h-7 : 16px ;
+  --sh-1 : 24px ;
+  --sh-2 : 20px ;
+  --b-1 : 18px ;
+  --b-2 : 16px ;
+  --b-3 : 14px ;
+}

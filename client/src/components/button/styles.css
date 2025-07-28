@@ -1,0 +1,47 @@
+.sec-btn {
+    height : 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width : 100% ;
+    gap : 10px ;
+    transition: transform ease .3s;
+    transform-origin: center;
+    font-size: var(--h-7);
+    border : none ;
+    background-color: transparent;
+}
+
+.sec-btn:hover{
+    transform: scale(1.1);
+}
+
+.main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap : 10px ;
+    transition: transform ease .3s;
+    transform-origin: center;
+    font-size: var(--h-7);
+    border : none ;
+    background-color: transparent;
+    border-width : 1px 0px 1px 0px ;
+    border-color : currentColor;
+    border-style: solid;
+    padding : 10px 15px ;
+}
+
+.main-btn:hover{
+    transform: scale(1.1);
+}
+
+button.white{
+    color : var(--bg);
+}
+
+button.gold{
+    color : var(--gold-500);
+}

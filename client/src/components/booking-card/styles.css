@@ -1,0 +1,66 @@
+.check-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background-color: var(--dark-grey-500);
+    padding: 20px;
+    color: #fff;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap : 7px ;
+    font-size: 14px;
+    color: #fff;
+    width : 100% ;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: var(--h-6);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+input[type="date"],
+select {
+    padding: 10px 12px ;
+    background-color: var(--dark-grey-400);
+    color: #d4af7f;
+    border: none;
+    border-radius: 4px;
+    font-size: var(--b-3);
+    appearance: none;
+    width: 100%;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #d4af7f;
+    font-size: 16px;
+}
+
+.check-btn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .check-form-container {
+        flex-wrap: wrap;
+        margin-bottom: -80px ;
+    }
+}

@@ -1,0 +1,53 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading.left {
+    align-items: flex-start;
+}
+
+.heading.center {
+    align-items: center;
+}
+
+.heading.right {
+    align-items: flex-end;
+}
+
+.heading>.vertical-line {
+    width: 1px;
+    height: 105px;
+    background-color: var(--gold-500);
+}
+
+.heading>.vertical-line.white{
+    background-color: var(--bg);
+}
+
+.heading>.subtitle {
+    color: var(--gold-500);
+    font-size: var(--h-6);
+}
+
+.heading>.title {
+    color: var(--dark-grey);
+    font-size: var(--h-3);
+}
+
+.heading>.title.white{
+    color : var(--bg);
+}
+
+.heading.left>.subtitle , .heading.left>.title {
+    text-align: left;
+}
+
+.heading.center>.subtitle, .heading.center>.title  {
+    text-align: center;
+}
+
+.heading.right> .subtitle, .heading.right>.title  {
+    text-align: right;
+}

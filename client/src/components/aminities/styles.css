@@ -1,0 +1,98 @@
+.aminities-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.aminities-heading-wrapper>div {
+  width: 100%;
+}
+
+.aminities-heading-wrapper>.para {
+  font-size: var(--b-1);
+  color: var(--dark-grey-400);
+  text-align: right;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width : 100% ;
+  position: relative;
+  margin-bottom: 50px ;
+}
+
+.placeholder {
+  background-color: #D9D9D9  ;
+  height: 100%;
+}
+
+.amenity-card {
+  background-color: var(--dark-grey-500);
+  color: var(--bg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 20px ;
+}
+
+.amenity-card.left {
+  text-align: left;
+}
+
+.amenity-card.right {
+  text-align: right;
+}
+
+.discover-btn.left {
+  justify-content: flex-start !important;
+}
+
+.discover-btn.right {
+  justify-content: flex-end !important;
+}
+
+.icon {
+  font-size: var(--h-6);
+  color: #d4af7f;
+}
+
+.title {
+  font-size: var(--h-6);
+  font-weight: 400;
+}
+
+.desc {
+  font-size: var(--b-3);
+  color: var(--bg);
+}
+
+.discover-btn {
+  color: #d4af7f;
+  font-size: 14px;
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    gap : 10px ;
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .aminities-heading-wrapper{
+    flex-wrap: wrap;
+    gap : 10px ;
+  }
+
+  .aminities-heading-wrapper > .para {
+    text-align: left;
+  }
+}
+

@@ -1,0 +1,35 @@
+#header{
+    padding : 16px 0px ;
+    position: fixed;
+    top : 0 ;
+    left : 0 ;
+    right: 0;
+    transition: all ease .3s;
+    z-index: 50;
+}
+
+#header.bg-show{
+    background-color: var(--dark-grey-500);
+}
+
+#header.bg-hidden{
+    background-color: transparent;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color : white ;
+}
+
+.logo {
+    width : 228px ;
+    height: 58px;
+    position: relative;
+}
+
+#header .logo img {
+    height: 100% ;
+    width: 100%;
+}

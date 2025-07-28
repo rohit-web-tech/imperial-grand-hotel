@@ -1,0 +1,255 @@
+footer {
+    background-color: var(--dark-grey-500);
+    padding: 40px 0;
+}
+
+footer .logo {
+    height: 88px;
+    width: 355px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-wrapper>.top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.footer-wrapper>.top>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-wrapper>.top>div:first-child {
+    max-width: 355px;
+}
+
+.footer-wrapper>.top .links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-wrapper>.top .links .links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer-wrapper .para {
+    color: var(--bg);
+    font-size: var(--b-3);
+    text-align: justify;
+}
+
+.sub-head {
+    color: var(--gold-500);
+    font-size: var(--b-1);
+}
+
+.links>.links-wrapper>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.links>.links-wrapper>ul>li {
+    list-style: none;
+}
+
+.links>.links-wrapper>ul>li>a {
+    text-decoration: none;
+    color: var(--bg);
+    font-size: var(--h-7);
+    text-transform: uppercase;
+}
+
+.links>.links-wrapper>ul>li>a:hover {
+    color : grey ;
+}
+
+.subscription>form {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.subscription>form>input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-grey-400);
+    color: var(--bg);
+    border: none;
+    outline: none;
+    padding: 0 50px 0 10px;
+    font-size: var(--b-3);
+}
+
+.subscription>form>input::placeholder {
+    color: var(--gold-500);
+}
+
+.subscription>form>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--gold-500);
+    border: none;
+    outline: none;
+    color: white;
+    width: 40px;
+    font-size: 30px;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.icon-wrapper {
+    color: var(--bg);
+    border: 1px solid var(--bg);
+    padding: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+.icon-wrapper:hover {
+    background-color: var(--bg);
+    color: var(--gold-500);
+    border-color: var(--gold-500);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bg);
+    font-size: var(--b-3);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bottom ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+.bottom ul li a {
+    color: var(--bg);
+    text-decoration: none;
+}
+
+.bottom ul li a:hover {
+    color : grey ;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-wrapper>.top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper>.top>div:first-child {
+        max-width: 100%;
+    }
+
+    .mid {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .icons-container {
+        justify-content: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottom ul {
+        justify-content: center;
+    }
+
+    .footer-wrapper>.top .links {
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subscription>form>button {
+        width: 36px;
+        font-size: 22px;
+    }
+
+    .subscription>form>input {
+        font-size: var(--b-2);
+    }
+
+    .icon-wrapper {
+        height: 36px;
+        width: 36px;
+        font-size: 16px;
+    }
+
+    .footer-wrapper .para {
+        font-size: var(--b-2);
+    }
+
+    .sub-head {
+        font-size: var(--b-2);
+    }
+
+    .links>ul>li>a {
+        font-size: var(--b-3);
+    }
+
+    .bottom {
+        font-size: var(--b-2);
+    }
+}

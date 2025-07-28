@@ -1,0 +1,87 @@
+nav > .desktop {
+    display: flex;
+    align-items: center;
+    gap : 20px ;
+}
+
+.nav-btn {
+    color : var(--bg);
+    font-size: var(--h-7);
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-btn:hover{
+    color : grey ;
+}
+
+.nav-btn.active {
+    color : var(--gold-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn.active::after{
+    content: "";
+    position: absolute;
+    bottom : -10px ;
+    width : 6px ;
+    height : 6px ;
+    background-color: var(--gold-500);
+    border-radius: 50%;
+}
+
+nav > .side-bar {
+    position: fixed;
+    width : 300px ;
+    background-color: var(--dark-grey-500);
+    height: 100vh;
+    top : 0 ;
+    display: none;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column  ;
+    padding-top: 60px;
+    gap : 25px ;
+    transition: transform ease .5s;
+    transform-origin: right;
+    z-index: 100;
+}
+
+nav > .side-bar > .close-btn {
+    position: absolute;
+    top : 20px ; 
+    right : 30px ;
+}
+
+nav > .side-bar.close {
+    transform: translateX(100%);
+}
+
+nav > .side-bar.open {
+    transform: translateX(-80%);
+}
+
+.open-btn, .close-btn {
+    background : transparent;
+    border : none ;
+    color : var(--bg) ;
+    font-size: var(--h-7);
+}
+
+.open-btn {
+    display: none;
+}
+
+@media (max-width : 420px) {
+    nav > .desktop {
+        display: none;
+    }
+    .open-btn{
+        display: block ;
+    }
+    nav > .side-bar {
+        display: flex;
+    }
+}
