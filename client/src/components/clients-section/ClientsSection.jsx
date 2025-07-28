@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ContentWrapper from '../content-wrapper/ContentWrapper';
 import Heading from '../heading/Heading';
 import './styles.css';
+import { Star } from 'lucide-react';
 
 const ClientCard = ({
     review,
@@ -18,8 +19,9 @@ const ClientCard = ({
             <div className="review-info">
                 <div className="stars">
                     {
-                        Array.from(rating).map(() => (
+                        Array.from({length : rating}).map((_,index) => (
                             <Star
+                                key={index}
                                 className='star'
                             />
                         ))
